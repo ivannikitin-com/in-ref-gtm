@@ -1,0 +1,54 @@
+#inrg-settings fieldset
+{
+	margin-bottom: 1em;
+}
+
+#inrg-settings legend
+{
+	font-size: 140%;
+}
+
+#inrg-settings .inrg-field
+{
+	clear: both;
+	margin-bottom: 2em;
+} 
+#inrg-settings label
+{
+	display: inline-block;
+	width: 150px;
+	float: left;	
+}
+#inrg-settings .inrg-input
+{
+	margin-left: 160px;
+}
+#inrg-settings .inrg-input input[type=text],
+#inrg-settings .inrg-input textarea
+{
+	width: 80%;
+}
+
+#inrg-settings .inrg-input textarea
+{
+	height: 6em;
+}
+
+#inrg-settings .inrg-input p
+{
+	margin: 2px;
+}
+
+#inrg-application-passwords, #inrg-application-passwords td
+{
+	border: 1px solid #ccc;
+	border-spacing: 0;
+}
+#inrg-application-passwords td
+{
+	padding: 1ex;
+}
+#inrg-application-passwords thead
+{
+	font-weight: bold; 
+}
