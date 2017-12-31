@@ -35,6 +35,12 @@ class INRG_Plugin
 	 */
 	public $referral;		
 	
+	/**
+	 * Экземпляр класса INRG_Referral
+	 * @var INRG_Referral
+	 */
+	public $user;		
+	
 	
 	/**
 	 * Конструктор
@@ -48,7 +54,7 @@ class INRG_Plugin
 		// Создание объектов
 		$this->settings = new INRG_Settings( $this );
 		$this->referral = new INRG_Referral( $this );
-		
+		$this->user = new INRG_User( $this );
 		
 		// Инициализация плагина по хуку init
 		add_action( 'init', array( $this, 'init' ) );
@@ -59,7 +65,9 @@ class INRG_Plugin
 	 */
 	public function init()
 	{
-		//$this->report 	= new Report( $this );
+		// Инициализация можулей
+		foreach ( $this->settings->_modules as $module )
+			$module->init();
 	}
 	
 	/**

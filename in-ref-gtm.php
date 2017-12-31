@@ -23,6 +23,16 @@ require( INRG_FOLDER . 'classes/inrg_plugin.php' );
 require( INRG_FOLDER . 'classes/inrg_base_settings.php' );
 require( INRG_FOLDER . 'classes/inrg_settings.php' );
 require( INRG_FOLDER . 'classes/ingr_referral.php' );
+require( INRG_FOLDER . 'classes/inrg-user.php' );
+
+/* активация плагина */
+register_activation_hook( __FILE__, 'inrg_activation' );
+function inrg_activation()
+{
+	// Добавление роли
+	INRG_User::addRole();
+}
+
 
 /* Инициализация плагина */
 add_action( 'plugins_loaded', 'inrg_loaded' );
