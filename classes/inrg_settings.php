@@ -183,6 +183,9 @@ class INRG_Settings
 <h1><?php _e('Код реферала в Google Tag Manager', INRG) ?></h1>
 <?php if ( $nonceError ) echo '<p class="error">',  __('Ошибка поля nonce', INRG), '</p>'; ?>
 
+<p><?php _e( 'Инструкция по использованию и настройке плагина <a href="https://github.com/ivannikitin-com/in-ref-gtm/blob/master/USER_MANUAL.md" target="_blank">здесь</a>.', INRG ) ?></p>
+
+
 <form id="inrg-settings" action="<?php echo $_SERVER['REQUEST_URI']?>" method="post">
 	<?php wp_nonce_field( $nonceAction, $nonceField ) ?>
 	

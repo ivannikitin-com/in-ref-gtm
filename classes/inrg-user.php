@@ -94,7 +94,7 @@ class INRG_User extends INRG_Base_Settings
 		if ( ! current_user_can( 'edit_user', $userId ) )
 			return false;
 		
-		$refCode = sanitize_text_field( $_POST[ self::REFCODE_HTML_ID ] );
+		$refCode = sanitize_key( $_POST[ self::REFCODE_HTML_ID ] );
 		update_usermeta( $userId, self::REFCODE, $refCode );
 		delete_transient( self::USERS_CACHE );
 	}

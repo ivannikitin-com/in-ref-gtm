@@ -40,7 +40,12 @@ class INRG_Plugin
 	 * @var INRG_Referral
 	 */
 	public $user;		
-	
+
+	/**
+	 * Экземпляр класса INRG_GTM4WP
+	 * @var INRG_GTM4WP
+	 */
+	public $gtm4wp;		
 	
 	/**
 	 * Конструктор
@@ -55,6 +60,7 @@ class INRG_Plugin
 		$this->settings = new INRG_Settings( $this );
 		$this->referral = new INRG_Referral( $this );
 		$this->user = new INRG_User( $this );
+		$this->gtm4wp = new INRG_GTM4WP( $this );
 		
 		// Инициализация плагина по хуку init
 		add_action( 'init', array( $this, 'init' ) );

@@ -24,6 +24,7 @@ require( INRG_FOLDER . 'classes/inrg_base_settings.php' );
 require( INRG_FOLDER . 'classes/inrg_settings.php' );
 require( INRG_FOLDER . 'classes/ingr_referral.php' );
 require( INRG_FOLDER . 'classes/inrg-user.php' );
+require( INRG_FOLDER . 'classes/inrg_gtm4wp.php' );
 
 /* активация плагина */
 register_activation_hook( __FILE__, 'inrg_activation' );
