@@ -18,7 +18,7 @@
 Для этого необходимо устравить и настроить плагин и аналичтические службы. Ниже приведена подробная инструкция.
 
 ## Установка плагина
-1. Скачайте [актуальную версию плагина IN-REG-GTM](https://github.com/ivannikitin-com/in-ref-gtm.git).
+1. Скачайте [актуальную версию плагина IN-REG-GTM](https://github.com/ivannikitin-com/in-ref-gtm/archive/master.zip).
 2. Установите плагин штатными средствами WordPress (Плагины --> Добавить новый --> Загрузить плагин).
 3. Активируйте плагин
 
@@ -28,13 +28,13 @@
 Обратите внимание на параметр "Роль", выберите из списка и установите значение "Партнёр".
 Обратите внимание на поле "Отображать как", именно это значение будет передаваться в Google Tag Manager. Установите предпочитаемый вид.
 
-![Параметры пользователя](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-settings.png)
+![Параметры пользователя](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-settings.png?raw=true)
 
 Ниже в профиле пользователя найдите и укажите его код в поле "Код партнера". Этот код должен быть уникальным. 
 Плагин не проферяет уникальность кода, но если он будет дублироваться для нескольких пользователей, плагин будет засчитывать продажи
 только первому найденному пользователю.
 
-![Указание кода партнера](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-refcode.png)
+![Указание кода партнера](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-refcode.png?raw=true)
 
 Сохраните изменения, нажав кнопку "Схранить". 
 
@@ -42,11 +42,11 @@
 В правом версхнем углу экрана найтите "Настройка экрана" и раскроейте его. Убедитесь, что галочка "Код партнёра" установлена. 
 Сохраните изменения.
 
-![Установка показа колонки Код партнера](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-screen-settings.png)
+![Установка показа колонки Код партнера](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-screen-settings.png?raw=true)
 
 Перейдите в список партнеров. Сообщите каждому партнеру его код.
 
-![Список партнеров](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-screen-role.png)
+![Список партнеров](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-screen-role.png?raw=true)
 
 ## Настройки партнёрской программы
 
