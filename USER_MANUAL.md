@@ -34,7 +34,7 @@
 Плагин не проферяет уникальность кода, но если он будет дублироваться для нескольких пользователей, плагин будет засчитывать продажи
 только первому найденному пользователю.
 
-![Указание кода партнера](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-refcode.png?raw=true)
+![Указание кода партнера](assets/img/user-refcode.png?raw=true)
 
 Сохраните изменения, нажав кнопку "Схранить". 
 
@@ -42,11 +42,11 @@
 В правом версхнем углу экрана найтите "Настройка экрана" и раскроейте его. Убедитесь, что галочка "Код партнёра" установлена. 
 Сохраните изменения.
 
-![Установка показа колонки Код партнера](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-screen-settings.png?raw=true)
+![Установка показа колонки Код партнера](assets/img/user-screen-settings.png?raw=true)
 
 Перейдите в список партнеров. Сообщите каждому партнеру его код.
 
-![Список партнеров](https://github.com/ivannikitin-com/in-ref-gtm/tree/master/assets/img/user-screen-role.png?raw=true)
+![Список партнеров](assets/img/user-screen-role.png?raw=true)
 
 ## Настройки партнёрской программы
 
