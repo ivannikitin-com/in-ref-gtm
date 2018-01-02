@@ -54,9 +54,15 @@ class INRG_User extends INRG_Base_Settings
 		// Показ Метабокса в профиле пользователя
 		add_action( 'show_user_profile', array( $this, 'showMetabox' ) );
 		add_action( 'edit_user_profile', array( $this, 'showMetabox' ) );
+		
 		// Сохранение метабокса в профиле пользователя
 		add_action( 'personal_options_update', array( $this, 'saveMetabox' ) );
 		add_action( 'edit_user_profile_update', array( $this, 'saveMetabox' ) );
+		
+		// Добавим колонку в таблицу при показе пользователей в админке с ролью рефералы
+		add_filter('manage_users_columns' , 		array( $this, 'addRefCodeColumn' ) );
+		add_filter('manage_users_custom_column' , 	array( $this, 'showRefCodeColumn' ), 10, 3 );
+		
 	}
 	
 	/**
@@ -132,4 +138,33 @@ class INRG_User extends INRG_Base_Settings
 		// Ничего не найдено
 		return false;
 	}
+	
+	/**
+	 * Добавляет колонку в тбалице пользователей
+	 * @param mixed $columns	Массив колонок
+	 * @return mixed
+	 */
+	public function addRefCodeColumn( $columns ) 
+	{ 
+		$columns[ self::REFCODE ] = __('Код партнёра', INRG);
+		return $columns; 
+	}
+	/**
+	 * Выводит колонку в тбалице пользователей
+	 * @param string $output		Custom column output. Default empty.
+	 * @param string $columnName	Column name.
+	 * @param string $column_name	Column name.
+	 * @param int $userId 			ID of the currently-listed user.
+	 * @return mixed
+	 */
+	public function showRefCodeColumn( $output, $columnName, $userId  ) 
+	{ 
+		if ( $columnName == self::REFCODE )
+		{
+			return get_the_author_meta( self::REFCODE, $userId );
+		}
+		
+		return $output;
+	}	
+	
 }	
